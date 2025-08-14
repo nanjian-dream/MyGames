@@ -4,6 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>南间梦游戏世界</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 20px;
+    }
+    .box {
+      max-width: 800px;
+      height: 100;
+      margin: auto;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+    .title h1 {
+      text-align: center;
+      color: #333;
+    }
+    .bunner {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+    }
+    .bunner span {
+      cursor: pointer;
+      color: #007BFF;
+    }
+    .content {
+      margin-top: 20px;
+      padding: 0 4rem;
+    }
+    .content h2 {
+      color: #555;
+      font-weight: 700;
+    }
+    .content ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+    .content li {
+      margin-bottom: 10px;
+      padding-left: 2rem;
+    }
+    .content a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+    .content a:hover {
+      text-decoration: underline;
+    }
+    .update-time {
+      font-size: 18px;
+      font-weight: bold;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
   <div class="box">
@@ -11,26 +70,48 @@
       <h1>南间梦游戏世界</h1>
     </div>
     <div class="bunner">
+      <span id="index">首页</span>
       <span id="twine-games">Twine</span>
       <span id="inky-games">Inky</span>
       <span id="date">更新日志</span>
       <span id="tele">联系作者</span>
     </div>
     <div class="content">
-      <div class="twine-games">
-        <h2>· Twine 游戏</h2>
+      <div class="index active">
+        <div class="twine-games">
+          <h2>· Twine 游戏</h2>
+          <ul>
+            <li><a href="./twine_games/simple_adventure_1/index.html" target="_blank">简单简单的冒险Ⅰ</a></li>
+            <li><a href="./twine_games/doomsday_bunker/index.html" target="_blank">末日地堡</a></li>
+          </ul>
+        </div>
+        <div class="inky-games">
+          <h2>· Inky 游戏</h2>
+          <ul>
+            <li><a href="./inky_games/river-crossing/index.html" target="_blank">过河</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="date">
+        <h2>· 更新日志</h2>
         <ul>
-          <li><a href="./twine_games/simple_adventure_1/index.html">简单简单的冒险Ⅰ</a></li>
-          <li><a href="./twine_games/doomsday_bunker/index.html">末日地堡</a></li>
+          <li>
+            <span class="update-time">2025-8-14</span><br>
+              创建游戏仓库，整合已有游戏《过河》、《简单简单的冒险Ⅰ》，增加新游戏《末日地堡》。<br>
+              当前内容较少，页面分类处理。<br>
+              导航栏点击跳转功能未完成，待内容增加后再完善。
+          </li>
         </ul>
       </div>
-      <div class="inky-games">
-        <h2>· Inky 游戏</h2>
+      <div class="tele">
+        <h2>· 联系作者</h2>
         <ul>
-          <li><a href="./inky_games/river-crossing/index.html">过河</a></li>
+          <li><p>如果您有任何问题或建议，请通过以下方式联系我：</p></li>
+          <li>作者：南间梦</li>
+          <li>QQ: 625809544</li>
+          <li>Email: 625809544@qq.com</li>
         </ul>
       </div>
-    </div>
   </div>
 </body>
 </html>
